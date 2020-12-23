@@ -166,7 +166,7 @@ class SWinLnk:
             item_data = '1f58' + self.convert_clsid_to_data(self.CLSID_Network)
 
             # Eg for '\\\\islion01\\foo\\bar' we get '\\\\islion01\\foo'
-            target_root = str(p.parent)[:-1]
+            target_root = str(p.parent)
 
             # If we have network path with at least one element
             if re.match(r'\\\\[^\\]+\\.*', str(p)):
